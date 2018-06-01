@@ -1,2 +1,2 @@
 # campi
-Raspberry Pi. Cammera with the touch screen.
+Raspberry Pi. Camera with the touch screen.
