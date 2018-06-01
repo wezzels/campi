@@ -1,5 +1,13 @@
+#On a Linux Box
+#Make image.
+wget http://osoyoo.com/driver/rpi_35_v6_1_2_3_jessie_kernel_4_4_50.rar
+sudo apt-get install unrar
+unrar rpi_35_v6_1_2_3_jessie_kernel_4_4_50.rar
+sudo dd if=./rpi_35_v6_1_2_3_jessie_kernel_4_4_50.img of=/dev/sdb bs=1M
 
 
+#Run on the installed Raspberry Pi
+exit
 sudo apt-mark hold raspberrypi-kernel
 sudo apt-mark hold raspberrypi-bootloader
 
