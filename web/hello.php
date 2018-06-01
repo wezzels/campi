@@ -2,7 +2,7 @@
 
     if (isset($_POST['button']))
     {
-	shell_exec("/home/pi/take_pic.sh");
+	shell_exec("/home/pi/projects/campi/take_pic.sh");
 #shell_exec("/usr/bin/raspistill -t 0 -q 70 -w 1920 -h 1080 -o /var/www/html/pics/image.jpg 2>&1");
     }
 ?>
@@ -33,6 +33,7 @@ setInterval(function() {
 
 <form method="post">
 <input name="button" style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 100%;" type="submit" value="Take Picture" onclick="" />
+<input name="button" style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 100%;" type="submit" value="Start roll." onclick="" />
 </form>
 
 <img src="./pics/cam.jpg" id="myImage" height="100" width="100" />
