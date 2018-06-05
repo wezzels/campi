@@ -20,22 +20,12 @@ body  {
 </style>
  </head>
  <body>
-<script>
-var myImageElement = document.getElementById('myImage');
-myImageElement.src = './pics/cam.jpg?rand=' + Math.random();
-
-setInterval(function() {
-    var myImageElement = document.getElementById('myImage');
-    myImageElement.src = './pics/cam.jpg?rand=' + Math.random();
-    console.log(myImageElement);
-}, 10);
-</script>
 <form method="post">
 <input name="button" style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 100%;" type="submit" value="Take Picture" onclick="" />
 <input name="button" style="width: 150px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 100%;" type="submit" value="Start roll." onclick="" />
 </form>
 
-<img src="./ram/cam.jpg" id="reloader" onload="setTimeout('document.getElementById(\'reloader\').src=\'./ram/cam.jpg?\'+new Date().getMilliseconds()', 1000)" width="160" height="120" />
+<img src="./ram/cam_text.jpg" id="reloader" onload="setTimeout('document.getElementById(\'reloader\').src=\'./ram/cam_text.jpg?\'+new Date().getMilliseconds()', 6000)" width="160" height="120" />
 
  </body>
 </html>
