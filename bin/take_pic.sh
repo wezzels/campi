@@ -1,5 +1,6 @@
 #!/bin/bash
 
 nowtime=`date '+%d-%m-%Y_%H_%M_%S'`
-cp /var/www/html/ram/cam.jpg /var/www/html/pics/image.jpg
-cp /var/www/html/pics/image.jpg /var/www/html/pics/pic-${nowtime}.jpg
+/usr/bin/convert -resize 25% /var/www/html/ram/cam.jpg /var/www/html/pics/image.jpg 2>&1
+cp /var/www/html/ram/image.jpg /var/www/html/pics/pic-${nowtime}.jpg
+
