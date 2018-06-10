@@ -8,6 +8,6 @@ do
 
 /usr/bin/convert -resize 25% /var/www/html/ram/cam.jpg /var/www/html/ram/cam_25.jpg 2>&1
 
-/usr/bin/convert -pointsize 30 -fill yellow -draw "text 10,40 '`date`' " /var/www/html/ram/cam_25.jpg /var/www/html/ram/cam_text.jpg 2>&1
-
+/usr/bin/convert -pointsize 30 -fill yellow -draw "text 10,40 '`date`' " /var/www/html/ram/cam_25.jpg /var/www/html/ram/cam_text_tmp.jpg 2>&1
+mv /var/www/html/ram/cam_text_tmp.jpg /var/www/html/ram/cam_text.jpg
 done

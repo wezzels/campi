@@ -25,7 +25,7 @@ body  {
 <input name="button" style="width: 120px; padding: 10px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ffff00; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 100%;" type="submit" value="Start roll." onclick="" />
 </form>
 
-<img src="./ram/cam_text.jpg" id="reloader" onload="setTimeout('document.getElementById(\'reloader\').src=\'./ram/cam_text.jpg?\'+new Date().getMilliseconds()', 5000)" width="160" height="120" />
+<img src="./ram/cam_text.jpg" id="reloader" onload="setTimeout('document.getElementById(\'reloader\').src=\'./ram/cam_text.jpg?\'+new Date().getMilliseconds()', 2000)" width="160" height="120" />
 
  </body>
 </html>
